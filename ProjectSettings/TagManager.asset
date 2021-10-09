@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Safe
   - Unsafe
+  - Last
   layers:
   - Default
   - TransparentFX
