@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Safe Block
-  - 'Unsafe Block '
+  - Safe
+  - Unsafe
   layers:
   - Default
   - TransparentFX
