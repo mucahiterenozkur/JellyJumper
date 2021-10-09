@@ -6443,6 +6443,8 @@ MonoBehaviour:
   splashEffectPrefab: {fileID: 5650966236808714890, guid: fbdb4ff5d5e9e1f49b6d0cc617e3ade8, type: 3}
   gameOverCanvas: {fileID: 402638038}
   winCanvas: {fileID: 313441817}
+  startGameCanvas: {fileID: 2205289631796704521, guid: 7c49aacd6cf872747add7cb27408d498, type: 3}
+  endGameCanvas: {fileID: 6078491099843676002, guid: 9b4ba26993694634c824ac022a92d5fa, type: 3}
 --- !u!96 &585002401
 TrailRenderer:
   serializedVersion: 2

@@ -5,12 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class BallMovement : MonoBehaviour
 {
+    public static bool youPlayed = false;
     public Rigidbody rb;
     public float jumpForce;
     public GameObject splashEffectPrefab;
     public GameObject gameOverCanvas;
     public GameObject winCanvas;
+    public GameObject startGameCanvas;
+    public GameObject endGameCanvas;
     private CyclinderMovement cyclinderMovement;
+
+    private void Awake()
+    {
+        if (SceneManager.GetActiveScene().name.Equals("EndOfGame"))
+        {
+            endGameCanvas.SetActive(true);
+        }
+
+        if (youPlayed.Equals(true))
+        {
+            startGameCanvas.SetActive(false);
+        }
+        else
+        {
+            startGameCanvas.SetActive(true);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +59,8 @@ public class BallMovement : MonoBehaviour
 
         if(other.gameObject.CompareTag("Unsafe"))
         {
-            Debug.Log("dead");
+            //Debug.Log("dead");
+            youPlayed = true;
             gameOverCanvas.SetActive(true);
             cyclinderMovement.rotateSpeed = 0;
             jumpForce = 0;
@@ -47,7 +68,8 @@ public class BallMovement : MonoBehaviour
 
         if (other.gameObject.CompareTag("Last"))
         {
-            Debug.Log("win");
+            //Debug.Log("win");
+            youPlayed = true;
             winCanvas.SetActive(true);
             cyclinderMovement.rotateSpeed = 0;
             
@@ -70,6 +92,7 @@ public class BallMovement : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+        youPlayed = false;
     }
 
     

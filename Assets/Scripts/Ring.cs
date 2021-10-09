@@ -16,7 +16,7 @@ public class Ring : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y >= ball.position.y)
+        if(transform.position.y - 4f >= ball.position.y)
         {
             Destroy(gameObject);
             scoreManager.AddScore();
