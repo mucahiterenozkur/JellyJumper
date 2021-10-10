@@ -4,7 +4,7 @@ Jelly Jumper is coming to break your wrist or fingers depends on which device yo
 Go through all the holes and get to the safe area in order to see next levels. Good luck, have fun! <br><br>
 This game is kind of 3D hypercasual game and made with Unity. Animations, sound effects, arts and more of them is used. Currently it has 5 levels.<br><br>
 How to play: mouse left click, hold it and rotate the platform which way you want to.<br><br>
-<strong>If you want to support me on itch.io --> </strong> <br><br>
+<strong>If you want to support me on itch.io --> https://mucahiterenozkur.itch.io/jelly-jumper </strong> <br><br>
 
 <strong> Gameplay </strong>
 
